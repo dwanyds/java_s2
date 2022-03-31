@@ -8,17 +8,17 @@ public class p {
 	product fst=new product();
 	product snd=new product();
 	product trd=new product();
-	if(fst.price>snd.price && fst.price>trd.price)
+	if(fst.price<snd.price && fst.price<trd.price)
 	{
-		System.out.println(fst.price+"is the largest");
+		System.out.println(fst.price+"is the smallestt");
 	}
-	else if(snd.price>fst.price && snd.price>trd.price)
+	else if(snd.price<trd.price)
 	{
-		System.out.println(snd.price+"is the largest");
+		System.out.println(snd.price+"is the smallest");
 	}
-	else if(trd.price>fst.price && trd.price>snd.price)
+	else
 	{
-	System.out.println(trd.price+"is the largest");
+	System.out.println(trd.price+"is the smallest");
 	}
 	}
 }
